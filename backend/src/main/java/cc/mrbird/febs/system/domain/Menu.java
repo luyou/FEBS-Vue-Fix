@@ -2,6 +2,7 @@ package cc.mrbird.febs.system.domain;
 
 import cc.mrbird.febs.common.converter.TimeConverter;
 import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.wuwenze.poi.annotation.Excel;
@@ -36,6 +37,7 @@ public class Menu implements Serializable {
 
     @Size(max = 50, message = "{noMoreThan}")
     @ExcelField(value = "地址")
+    @TableField(value = "\"PATH\"")
     private String path;
 
     @Size(max = 100, message = "{noMoreThan}")
@@ -51,6 +53,7 @@ public class Menu implements Serializable {
 
     @NotBlank(message = "{required}")
     @ExcelField(value = "类型", writeConverterExp = "0=按钮,1=菜单")
+    @TableField(value = "\"TYPE\"")
     private String type;
 
     private Double orderNum;

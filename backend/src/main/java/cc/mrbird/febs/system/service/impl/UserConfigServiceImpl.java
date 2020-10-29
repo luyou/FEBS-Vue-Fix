@@ -22,7 +22,7 @@ public class UserConfigServiceImpl extends ServiceImpl<UserConfigMapper, UserCon
 
     @Override
     public UserConfig findByUserId(String userId) {
-        return baseMapper.selectById(userId);
+        return baseMapper.selectById(Long.valueOf(userId));
     }
 
     @Override

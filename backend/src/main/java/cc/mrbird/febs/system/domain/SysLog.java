@@ -2,6 +2,7 @@ package cc.mrbird.febs.system.domain;
 
 import cc.mrbird.febs.common.converter.TimeConverter;
 import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.wuwenze.poi.annotation.Excel;
@@ -25,12 +26,15 @@ public class SysLog implements Serializable {
     private String username;
 
     @ExcelField(value = "操作描述")
+    @TableField(value = "\"OPERATION\"")
     private String operation;
 
     @ExcelField(value = "耗时（毫秒）")
+    @TableField(value = "\"TIME\"")
     private Long time;
 
     @ExcelField(value = "执行方法")
+    @TableField(value = "\"METHOD\"")
     private String method;
 
     @ExcelField(value = "方法参数")
@@ -46,6 +50,7 @@ public class SysLog implements Serializable {
     private transient String createTimeTo;
 
     @ExcelField(value = "操作地点")
+    @TableField(value = "\"LOCATION\"")
     private String location;
 
 }

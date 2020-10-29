@@ -1,0 +1,926 @@
+2020-09-16 14:11:23.716 febs [main] INFO  cc.mrbird.febs.FebsApplication - Starting FebsApplication on MacBook-Pro.local with PID 34321 (/Users/luyou/work/github/febs/backend/target/classes started by luyou in /Users/luyou/work/github/febs)
+2020-09-16 14:11:23.720 febs [main] INFO  cc.mrbird.febs.FebsApplication - No active profile set, falling back to default profiles: default
+2020-09-16 14:11:26.274 febs [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-16 14:11:26.283 febs [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-09-16 14:11:26.376 febs [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 46ms. Found 0 repository interfaces.
+2020-09-16 14:11:26.892 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'asyncExecutorPoolConfig' of type [cc.mrbird.febs.common.config.AsyncExecutorPoolConfig$$EnhancerBySpringCGLIB$$55da6a08] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:11:27.087 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:11:27.360 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$3029b5ac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:11:27.372 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:11:27.378 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:11:27.392 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c69b44db] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:11:27.421 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroConfig' of type [cc.mrbird.febs.common.authentication.ShiroConfig$$EnhancerBySpringCGLIB$$321b4684] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:11:27.834 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [cc.mrbird.febs.common.config.RedisConfig$$EnhancerBySpringCGLIB$$2adffdd8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:11:27.869 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisPoolFactory' of type [redis.clients.jedis.JedisPool] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:11:27.875 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisService' of type [cc.mrbird.febs.common.service.impl.RedisServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:11:27.983 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mybatis-plus-com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:11:27.992 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mybatisPlusConfig' of type [cc.mrbird.febs.common.config.MybatisPlusConfig$$EnhancerBySpringCGLIB$$1822a0ea] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:11:27.998 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'paginationInterceptor' of type [cc.mrbird.febs.common.interceptor.PaginationInterceptorImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:11:28.015 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$463b175] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:11:28.030 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dynamicDataSourceCreator' of type [com.baomidou.dynamic.datasource.DynamicDataSourceCreator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:11:28.032 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dynamicDataSourceProvider' of type [com.baomidou.dynamic.datasource.provider.YmlDynamicDataSourceProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:11:28.036 febs [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource detect P6SPY plugin and enabled it
+2020-09-16 14:11:28.059 febs [main] INFO  com.zaxxer.hikari.HikariDataSource - primary - Starting...
+2020-09-16 14:11:29.556 febs [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-09-16 14:31:29.716 febs [main] INFO  cc.mrbird.febs.FebsApplication - Starting FebsApplication on MacBook-Pro.local with PID 34939 (/Users/luyou/work/github/febs/backend/target/classes started by luyou in /Users/luyou/work/github/febs)
+2020-09-16 14:31:29.723 febs [main] INFO  cc.mrbird.febs.FebsApplication - No active profile set, falling back to default profiles: default
+2020-09-16 14:31:32.621 febs [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-16 14:31:32.631 febs [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-09-16 14:31:32.728 febs [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 54ms. Found 0 repository interfaces.
+2020-09-16 14:31:33.253 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'asyncExecutorPoolConfig' of type [cc.mrbird.febs.common.config.AsyncExecutorPoolConfig$$EnhancerBySpringCGLIB$$dc5f4b23] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:33.476 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:33.752 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$b6ae96c7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:33.762 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:33.767 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:33.782 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4d2025f6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:33.842 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroConfig' of type [cc.mrbird.febs.common.authentication.ShiroConfig$$EnhancerBySpringCGLIB$$b8a0279f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:34.244 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [cc.mrbird.febs.common.config.RedisConfig$$EnhancerBySpringCGLIB$$b164def3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:34.279 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisPoolFactory' of type [redis.clients.jedis.JedisPool] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:34.285 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisService' of type [cc.mrbird.febs.common.service.impl.RedisServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:34.396 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mybatis-plus-com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:34.405 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mybatisPlusConfig' of type [cc.mrbird.febs.common.config.MybatisPlusConfig$$EnhancerBySpringCGLIB$$9ea78205] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:34.411 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'paginationInterceptor' of type [cc.mrbird.febs.common.interceptor.PaginationInterceptorImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:34.427 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$8ae89290] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:34.442 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dynamicDataSourceCreator' of type [com.baomidou.dynamic.datasource.DynamicDataSourceCreator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:34.443 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dynamicDataSourceProvider' of type [com.baomidou.dynamic.datasource.provider.YmlDynamicDataSourceProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:34.449 febs [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource detect P6SPY plugin and enabled it
+2020-09-16 14:31:34.474 febs [main] INFO  com.zaxxer.hikari.HikariDataSource - primary - Starting...
+2020-09-16 14:31:34.910 febs [main] INFO  com.zaxxer.hikari.HikariDataSource - primary - Start completed.
+2020-09-16 14:31:34.911 febs [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource - load a datasource named [primary] success
+2020-09-16 14:31:34.911 febs [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [primary]
+2020-09-16 14:31:34.911 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dataSource' of type [com.baomidou.dynamic.datasource.DynamicRoutingDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:34.927 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:34.940 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:35.635 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:35.649 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:35.655 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'roleMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:35.658 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'roleMapper' of type [com.sun.proxy.$Proxy112] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:35.702 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'roleMenuMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:35.704 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'roleMenuMapper' of type [com.sun.proxy.$Proxy114] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:35.713 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userRoleMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:35.715 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userRoleMapper' of type [com.sun.proxy.$Proxy115] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:35.717 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userRoleService' of type [cc.mrbird.febs.system.service.impl.UserRoleServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:35.797 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'roleMenuService' of type [cc.mrbird.febs.system.service.impl.RoleMenuServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:35.822 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'roleService' of type [cc.mrbird.febs.system.service.impl.RoleServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:35.869 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'menuMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:35.873 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'menuMapper' of type [com.sun.proxy.$Proxy119] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:35.880 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'menuService' of type [cc.mrbird.febs.system.service.impl.MenuServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:35.962 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:35.964 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userMapper' of type [com.sun.proxy.$Proxy121] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:36.013 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userConfigMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:36.014 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userConfigMapper' of type [com.sun.proxy.$Proxy122] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:36.019 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userConfigService' of type [cc.mrbird.febs.system.service.impl.UserConfigServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:36.045 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userService' of type [cc.mrbird.febs.system.service.impl.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:36.092 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'febsProperties' of type [cc.mrbird.febs.common.properties.FebsProperties$$EnhancerBySpringCGLIB$$b7e74572] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:36.095 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'febsConfig' of type [cc.mrbird.febs.common.config.FebsConfig$$EnhancerBySpringCGLIB$$aa027092] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:36.109 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration$$EnhancerBySpringCGLIB$$5b0067a0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:36.115 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$$EnhancerBySpringCGLIB$$16174d8f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:36.153 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties' of type [org.springframework.boot.autoconfigure.jackson.JacksonProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:36.161 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'standardJacksonObjectMapperBuilderCustomizer' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$StandardJackson2ObjectMapperBuilderCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:36.175 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration$$EnhancerBySpringCGLIB$$3ce2c4bd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:36.192 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'parameterNamesModule' of type [com.fasterxml.jackson.module.paramnames.ParameterNamesModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:36.195 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$$EnhancerBySpringCGLIB$$8abf4316] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:36.207 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jsonComponentModule' of type [org.springframework.boot.jackson.JsonComponentModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:36.210 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.data.web.config.SpringDataJacksonConfiguration' of type [org.springframework.data.web.config.SpringDataJacksonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:36.222 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jacksonGeoModule' of type [org.springframework.data.geo.GeoModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:36.228 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jacksonObjectMapperBuilder' of type [org.springframework.http.converter.json.Jackson2ObjectMapperBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:36.266 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jacksonObjectMapper' of type [com.fasterxml.jackson.databind.ObjectMapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:36.286 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'cacheService' of type [cc.mrbird.febs.common.service.impl.CacheServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:36.292 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userManager' of type [cc.mrbird.febs.system.manager.UserManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:36.293 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroRealm' of type [cc.mrbird.febs.common.authentication.ShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:36.309 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:36.363 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:31:36.883 febs [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9527 (http)
+2020-09-16 14:31:36.914 febs [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9527"]
+2020-09-16 14:31:36.926 febs [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-09-16 14:31:36.927 febs [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2020-09-16 14:31:37.114 febs [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-09-16 14:31:37.114 febs [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 7176 ms
+2020-09-16 14:31:38.265 febs [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2020-09-16 14:31:38.293 febs [main] INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-09-16 14:31:38.293 febs [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.1 created.
+2020-09-16 14:31:38.405 febs [main] INFO  o.s.s.quartz.LocalDataSourceJobStore - Using db table-based data access locking (synchronization).
+2020-09-16 14:31:38.411 febs [main] INFO  o.s.s.quartz.LocalDataSourceJobStore - JobStoreCMT initialized.
+2020-09-16 14:31:38.411 febs [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'MyScheduler' with instanceId 'MacBook-Pro.local1600237898269'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2020-09-16 14:31:38.412 febs [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'MyScheduler' initialized from an externally provided properties instance.
+2020-09-16 14:31:38.412 febs [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.1
+2020-09-16 14:31:38.415 febs [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@202f054f
+2020-09-16 14:31:38.663 febs [main] INFO  p6spy - 2020-09-16 14:31:38 | 耗时 2 ms | SQL 语句：
+select job_id jobId, bean_name beanName, method_name methodName, params, cron_expression cronExpression, status, remark, create_time createTime from t_job order by job_id;
+2020-09-16 14:31:40.167 febs [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-09-16 14:31:40.361 febs [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'taskExecutor'
+2020-09-16 14:31:40.405 febs [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-09-16 14:31:42.123 febs [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2020-09-16 14:31:42.256 febs [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-09-16 14:31:42.309 febs [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-09-16 14:31:42.407 febs [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-09-16 14:31:42.684 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: exportUsingPOST_1
+2020-09-16 14:31:42.704 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: exportUsingPOST_2
+2020-09-16 14:31:42.706 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateDictUsingPUT_1
+2020-09-16 14:31:42.721 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: exportUsingPOST_3
+2020-09-16 14:31:42.736 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: exportUsingPOST_4
+2020-09-16 14:31:42.745 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: exportUsingPOST_5
+2020-09-16 14:31:42.766 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: exportUsingPOST_6
+2020-09-16 14:31:42.807 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: exportUsingPOST_7
+2020-09-16 14:31:42.819 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: exportUsingPOST_8
+2020-09-16 14:31:42.824 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: generateImportTemplateUsingPOST_1
+2020-09-16 14:31:42.826 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: importExcelsUsingPOST_1
+2020-09-16 14:31:42.853 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: exportUsingPOST_9
+2020-09-16 14:31:42.933 febs [main] INFO  o.s.s.quartz.SchedulerFactoryBean - Will start Quartz Scheduler [MyScheduler] in 1 seconds
+2020-09-16 14:31:43.028 febs [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9527"]
+2020-09-16 14:31:43.096 febs [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9527 (http) with context path ''
+2020-09-16 14:31:43.100 febs [main] INFO  cc.mrbird.febs.FebsApplication - Started FebsApplication in 14.453 seconds (JVM running for 16.256)
+2020-09-16 14:31:43.113 febs [main] INFO  c.m.f.common.runner.CacheInitRunner - Redis连接中 ······
+2020-09-16 14:31:43.953 febs [Quartz Scheduler [MyScheduler]] INFO  o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now, after delay of 1 seconds
+2020-09-16 14:31:43.968 febs [Quartz Scheduler [MyScheduler]] INFO  o.s.s.quartz.LocalDataSourceJobStore - ClusterManager: detected 1 failed or restarted instances.
+2020-09-16 14:31:43.968 febs [Quartz Scheduler [MyScheduler]] INFO  o.s.s.quartz.LocalDataSourceJobStore - ClusterManager: Scanning for instance "wx-PC1588655825716"'s failed in-progress jobs.
+2020-09-16 14:31:43.973 febs [Quartz Scheduler [MyScheduler]] INFO  p6spy - 
+2020-09-16 14:31:43.974 febs [Quartz Scheduler [MyScheduler]] INFO  org.quartz.core.QuartzScheduler - Scheduler MyScheduler_$_MacBook-Pro.local1600237898269 started.
+2020-09-16 14:31:43.981 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600237898269_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:31:43.983 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 14:31:44.018 febs [main] INFO  org.quartz.core.QuartzScheduler - Scheduler MyScheduler_$_MacBook-Pro.local1600237898269 paused.
+2020-09-16 14:31:44.019 febs [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2020-09-16 14:31:44.032 febs [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'taskExecutor'
+2020-09-16 14:31:44.036 febs [main] INFO  o.s.s.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2020-09-16 14:31:44.036 febs [main] INFO  org.quartz.core.QuartzScheduler - Scheduler MyScheduler_$_MacBook-Pro.local1600237898269 shutting down.
+2020-09-16 14:31:44.036 febs [main] INFO  org.quartz.core.QuartzScheduler - Scheduler MyScheduler_$_MacBook-Pro.local1600237898269 paused.
+2020-09-16 14:31:44.039 febs [main] INFO  org.quartz.core.QuartzScheduler - Scheduler MyScheduler_$_MacBook-Pro.local1600237898269 shutdown complete.
+2020-09-16 14:31:44.046 febs [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2020-09-16 14:31:44.047 febs [main] INFO  com.zaxxer.hikari.HikariDataSource - primary - Shutdown initiated...
+2020-09-16 14:31:44.061 febs [main] INFO  com.zaxxer.hikari.HikariDataSource - primary - Shutdown completed.
+2020-09-16 14:31:44.061 febs [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
+2020-09-16 14:33:00.934 febs [main] INFO  cc.mrbird.febs.FebsApplication - Starting FebsApplication on MacBook-Pro.local with PID 35005 (/Users/luyou/work/github/febs/backend/target/classes started by luyou in /Users/luyou/work/github/febs)
+2020-09-16 14:33:00.939 febs [main] INFO  cc.mrbird.febs.FebsApplication - No active profile set, falling back to default profiles: default
+2020-09-16 14:33:04.745 febs [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-16 14:33:04.747 febs [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-09-16 14:33:04.799 febs [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37ms. Found 0 repository interfaces.
+2020-09-16 14:33:05.260 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'asyncExecutorPoolConfig' of type [cc.mrbird.febs.common.config.AsyncExecutorPoolConfig$$EnhancerBySpringCGLIB$$d97ef66f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:05.410 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:05.547 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$b3ce4213] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:05.561 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:05.565 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:05.583 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4a3fd142] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:05.639 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroConfig' of type [cc.mrbird.febs.common.authentication.ShiroConfig$$EnhancerBySpringCGLIB$$b5bfd2eb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:06.045 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [cc.mrbird.febs.common.config.RedisConfig$$EnhancerBySpringCGLIB$$ae848a3f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:06.071 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisPoolFactory' of type [redis.clients.jedis.JedisPool] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:06.079 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisService' of type [cc.mrbird.febs.common.service.impl.RedisServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:06.169 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mybatis-plus-com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:06.179 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mybatisPlusConfig' of type [cc.mrbird.febs.common.config.MybatisPlusConfig$$EnhancerBySpringCGLIB$$9bc72d51] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:06.185 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'paginationInterceptor' of type [cc.mrbird.febs.common.interceptor.PaginationInterceptorImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:06.203 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$88083ddc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:06.218 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dynamicDataSourceCreator' of type [com.baomidou.dynamic.datasource.DynamicDataSourceCreator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:06.220 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dynamicDataSourceProvider' of type [com.baomidou.dynamic.datasource.provider.YmlDynamicDataSourceProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:06.223 febs [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource detect P6SPY plugin and enabled it
+2020-09-16 14:33:06.231 febs [main] INFO  com.zaxxer.hikari.HikariDataSource - primary - Starting...
+2020-09-16 14:33:06.574 febs [main] INFO  com.zaxxer.hikari.HikariDataSource - primary - Start completed.
+2020-09-16 14:33:06.574 febs [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource - load a datasource named [primary] success
+2020-09-16 14:33:06.575 febs [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [primary]
+2020-09-16 14:33:06.575 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dataSource' of type [com.baomidou.dynamic.datasource.DynamicRoutingDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:06.592 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:06.603 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:07.320 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:07.331 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:07.346 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'roleMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:07.355 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'roleMapper' of type [com.sun.proxy.$Proxy112] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:07.428 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'roleMenuMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:07.430 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'roleMenuMapper' of type [com.sun.proxy.$Proxy114] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:07.442 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userRoleMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:07.445 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userRoleMapper' of type [com.sun.proxy.$Proxy115] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:07.448 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userRoleService' of type [cc.mrbird.febs.system.service.impl.UserRoleServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:07.617 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'roleMenuService' of type [cc.mrbird.febs.system.service.impl.RoleMenuServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:07.647 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'roleService' of type [cc.mrbird.febs.system.service.impl.RoleServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:07.684 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'menuMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:07.685 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'menuMapper' of type [com.sun.proxy.$Proxy119] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:07.688 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'menuService' of type [cc.mrbird.febs.system.service.impl.MenuServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:07.722 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:07.723 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userMapper' of type [com.sun.proxy.$Proxy121] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:07.767 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userConfigMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:07.769 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userConfigMapper' of type [com.sun.proxy.$Proxy122] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:07.819 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userConfigService' of type [cc.mrbird.febs.system.service.impl.UserConfigServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:08.006 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userService' of type [cc.mrbird.febs.system.service.impl.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:08.117 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'febsProperties' of type [cc.mrbird.febs.common.properties.FebsProperties$$EnhancerBySpringCGLIB$$b506f0be] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:08.124 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'febsConfig' of type [cc.mrbird.febs.common.config.FebsConfig$$EnhancerBySpringCGLIB$$a7221bde] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:08.168 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration$$EnhancerBySpringCGLIB$$582012ec] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:08.171 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$$EnhancerBySpringCGLIB$$1336f8db] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:08.187 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties' of type [org.springframework.boot.autoconfigure.jackson.JacksonProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:08.190 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'standardJacksonObjectMapperBuilderCustomizer' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$StandardJackson2ObjectMapperBuilderCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:08.199 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration$$EnhancerBySpringCGLIB$$3a027009] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:08.206 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'parameterNamesModule' of type [com.fasterxml.jackson.module.paramnames.ParameterNamesModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:08.209 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$$EnhancerBySpringCGLIB$$87deee62] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:08.228 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jsonComponentModule' of type [org.springframework.boot.jackson.JsonComponentModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:08.230 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.data.web.config.SpringDataJacksonConfiguration' of type [org.springframework.data.web.config.SpringDataJacksonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:08.234 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jacksonGeoModule' of type [org.springframework.data.geo.GeoModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:08.238 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jacksonObjectMapperBuilder' of type [org.springframework.http.converter.json.Jackson2ObjectMapperBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:08.264 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jacksonObjectMapper' of type [com.fasterxml.jackson.databind.ObjectMapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:08.282 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'cacheService' of type [cc.mrbird.febs.common.service.impl.CacheServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:08.288 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userManager' of type [cc.mrbird.febs.system.manager.UserManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:08.289 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroRealm' of type [cc.mrbird.febs.common.authentication.ShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:08.299 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:08.317 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:33:08.792 febs [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9527 (http)
+2020-09-16 14:33:08.850 febs [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9527"]
+2020-09-16 14:33:08.864 febs [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-09-16 14:33:08.864 febs [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2020-09-16 14:33:09.034 febs [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-09-16 14:33:09.034 febs [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 7948 ms
+2020-09-16 14:33:10.331 febs [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2020-09-16 14:33:10.423 febs [main] INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-09-16 14:33:10.424 febs [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.1 created.
+2020-09-16 14:33:10.482 febs [main] INFO  o.s.s.quartz.LocalDataSourceJobStore - Using db table-based data access locking (synchronization).
+2020-09-16 14:33:10.484 febs [main] INFO  o.s.s.quartz.LocalDataSourceJobStore - JobStoreCMT initialized.
+2020-09-16 14:33:10.485 febs [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'MyScheduler' with instanceId 'MacBook-Pro.local1600237990334'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2020-09-16 14:33:10.486 febs [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'MyScheduler' initialized from an externally provided properties instance.
+2020-09-16 14:33:10.486 febs [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.1
+2020-09-16 14:33:10.487 febs [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@678586f0
+2020-09-16 14:33:10.555 febs [main] INFO  p6spy - 2020-09-16 14:33:10 | 耗时 1 ms | SQL 语句：
+select job_id jobId, bean_name beanName, method_name methodName, params, cron_expression cronExpression, status, remark, create_time createTime from t_job order by job_id;
+2020-09-16 14:33:12.605 febs [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-09-16 14:33:12.852 febs [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'taskExecutor'
+2020-09-16 14:33:12.885 febs [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-09-16 14:33:14.610 febs [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2020-09-16 14:33:14.717 febs [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-09-16 14:33:14.743 febs [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-09-16 14:33:14.801 febs [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-09-16 14:33:15.057 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: exportUsingPOST_1
+2020-09-16 14:33:15.075 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: exportUsingPOST_2
+2020-09-16 14:33:15.077 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateDictUsingPUT_1
+2020-09-16 14:33:15.094 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: exportUsingPOST_3
+2020-09-16 14:33:15.109 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: exportUsingPOST_4
+2020-09-16 14:33:15.118 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: exportUsingPOST_5
+2020-09-16 14:33:15.137 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: exportUsingPOST_6
+2020-09-16 14:33:15.177 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: exportUsingPOST_7
+2020-09-16 14:33:15.185 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: exportUsingPOST_8
+2020-09-16 14:33:15.187 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: generateImportTemplateUsingPOST_1
+2020-09-16 14:33:15.189 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: importExcelsUsingPOST_1
+2020-09-16 14:33:15.208 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: exportUsingPOST_9
+2020-09-16 14:33:15.236 febs [main] INFO  o.s.s.quartz.SchedulerFactoryBean - Will start Quartz Scheduler [MyScheduler] in 1 seconds
+2020-09-16 14:33:15.256 febs [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9527"]
+2020-09-16 14:33:15.344 febs [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9527 (http) with context path ''
+2020-09-16 14:33:15.353 febs [main] INFO  cc.mrbird.febs.FebsApplication - Started FebsApplication in 15.574 seconds (JVM running for 16.853)
+2020-09-16 14:33:15.391 febs [main] INFO  c.m.f.common.runner.CacheInitRunner - Redis连接中 ······
+2020-09-16 14:33:15.850 febs [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2020-09-16 14:33:15.858 febs [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'taskExecutor'
+2020-09-16 14:33:15.861 febs [main] INFO  o.s.s.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2020-09-16 14:33:15.861 febs [main] INFO  org.quartz.core.QuartzScheduler - Scheduler MyScheduler_$_MacBook-Pro.local1600237990334 shutting down.
+2020-09-16 14:33:15.861 febs [main] INFO  org.quartz.core.QuartzScheduler - Scheduler MyScheduler_$_MacBook-Pro.local1600237990334 paused.
+2020-09-16 14:33:15.861 febs [main] INFO  org.quartz.core.QuartzScheduler - Scheduler MyScheduler_$_MacBook-Pro.local1600237990334 shutdown complete.
+2020-09-16 14:33:15.866 febs [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2020-09-16 14:33:15.867 febs [main] INFO  com.zaxxer.hikari.HikariDataSource - primary - Shutdown initiated...
+2020-09-16 14:33:15.873 febs [main] INFO  com.zaxxer.hikari.HikariDataSource - primary - Shutdown completed.
+2020-09-16 14:33:15.873 febs [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
+2020-09-16 14:33:16.242 febs [Quartz Scheduler [MyScheduler]] INFO  o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now, after delay of 1 seconds
+2020-09-16 14:40:50.170 febs [main] INFO  cc.mrbird.febs.FebsApplication - Starting FebsApplication on MacBook-Pro.local with PID 36414 (/Users/luyou/work/github/febs/backend/target/classes started by luyou in /Users/luyou/work/github/febs)
+2020-09-16 14:40:50.184 febs [main] INFO  cc.mrbird.febs.FebsApplication - No active profile set, falling back to default profiles: default
+2020-09-16 14:40:54.619 febs [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-16 14:40:54.629 febs [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-09-16 14:40:54.745 febs [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 68ms. Found 0 repository interfaces.
+2020-09-16 14:40:55.725 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'asyncExecutorPoolConfig' of type [cc.mrbird.febs.common.config.AsyncExecutorPoolConfig$$EnhancerBySpringCGLIB$$e5af8706] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:40:56.115 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:40:56.456 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$bffed2aa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:40:56.469 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:40:56.475 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:40:56.488 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$567061d9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:40:56.520 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroConfig' of type [cc.mrbird.febs.common.authentication.ShiroConfig$$EnhancerBySpringCGLIB$$c1f06382] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:40:57.061 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [cc.mrbird.febs.common.config.RedisConfig$$EnhancerBySpringCGLIB$$bab51ad6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:40:57.108 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisPoolFactory' of type [redis.clients.jedis.JedisPool] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:40:57.113 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisService' of type [cc.mrbird.febs.common.service.impl.RedisServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:40:57.549 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mybatis-plus-com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:40:57.572 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mybatisPlusConfig' of type [cc.mrbird.febs.common.config.MybatisPlusConfig$$EnhancerBySpringCGLIB$$a7f7bde8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:40:57.599 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'paginationInterceptor' of type [cc.mrbird.febs.common.interceptor.PaginationInterceptorImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:40:57.640 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$9438ce73] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:40:57.662 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dynamicDataSourceCreator' of type [com.baomidou.dynamic.datasource.DynamicDataSourceCreator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:40:57.664 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dynamicDataSourceProvider' of type [com.baomidou.dynamic.datasource.provider.YmlDynamicDataSourceProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:40:57.672 febs [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource detect P6SPY plugin and enabled it
+2020-09-16 14:40:57.691 febs [main] INFO  com.zaxxer.hikari.HikariDataSource - primary - Starting...
+2020-09-16 14:40:58.388 febs [main] INFO  com.zaxxer.hikari.HikariDataSource - primary - Start completed.
+2020-09-16 14:40:58.388 febs [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource - load a datasource named [primary] success
+2020-09-16 14:40:58.388 febs [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [primary]
+2020-09-16 14:40:58.389 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dataSource' of type [com.baomidou.dynamic.datasource.DynamicRoutingDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:40:58.407 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:40:58.425 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:40:59.638 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:40:59.648 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:40:59.652 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'roleMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:40:59.656 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'roleMapper' of type [com.sun.proxy.$Proxy112] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:40:59.694 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'roleMenuMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:40:59.696 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'roleMenuMapper' of type [com.sun.proxy.$Proxy114] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:40:59.706 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userRoleMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:40:59.707 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userRoleMapper' of type [com.sun.proxy.$Proxy115] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:40:59.710 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userRoleService' of type [cc.mrbird.febs.system.service.impl.UserRoleServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:40:59.782 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'roleMenuService' of type [cc.mrbird.febs.system.service.impl.RoleMenuServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:40:59.811 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'roleService' of type [cc.mrbird.febs.system.service.impl.RoleServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:40:59.937 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'menuMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:40:59.939 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'menuMapper' of type [com.sun.proxy.$Proxy119] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:40:59.945 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'menuService' of type [cc.mrbird.febs.system.service.impl.MenuServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:40:59.998 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:41:00.001 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userMapper' of type [com.sun.proxy.$Proxy121] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:41:00.098 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userConfigMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:41:00.101 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userConfigMapper' of type [com.sun.proxy.$Proxy122] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:41:00.120 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userConfigService' of type [cc.mrbird.febs.system.service.impl.UserConfigServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:41:00.165 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userService' of type [cc.mrbird.febs.system.service.impl.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:41:00.227 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'febsProperties' of type [cc.mrbird.febs.common.properties.FebsProperties$$EnhancerBySpringCGLIB$$c1378155] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:41:00.231 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'febsConfig' of type [cc.mrbird.febs.common.config.FebsConfig$$EnhancerBySpringCGLIB$$b352ac75] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:41:00.238 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration$$EnhancerBySpringCGLIB$$6450a383] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:41:00.242 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$$EnhancerBySpringCGLIB$$1f678972] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:41:00.255 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties' of type [org.springframework.boot.autoconfigure.jackson.JacksonProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:41:00.258 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'standardJacksonObjectMapperBuilderCustomizer' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$StandardJackson2ObjectMapperBuilderCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:41:00.265 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration$$EnhancerBySpringCGLIB$$463300a0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:41:00.274 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'parameterNamesModule' of type [com.fasterxml.jackson.module.paramnames.ParameterNamesModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:41:00.278 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$$EnhancerBySpringCGLIB$$940f7ef9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:41:00.289 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jsonComponentModule' of type [org.springframework.boot.jackson.JsonComponentModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:41:00.291 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.data.web.config.SpringDataJacksonConfiguration' of type [org.springframework.data.web.config.SpringDataJacksonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:41:00.305 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jacksonGeoModule' of type [org.springframework.data.geo.GeoModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:41:00.314 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jacksonObjectMapperBuilder' of type [org.springframework.http.converter.json.Jackson2ObjectMapperBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:41:00.452 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jacksonObjectMapper' of type [com.fasterxml.jackson.databind.ObjectMapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:41:00.474 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'cacheService' of type [cc.mrbird.febs.common.service.impl.CacheServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:41:00.483 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userManager' of type [cc.mrbird.febs.system.manager.UserManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:41:00.484 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroRealm' of type [cc.mrbird.febs.common.authentication.ShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:41:00.497 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:41:00.533 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-16 14:41:01.115 febs [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9527 (http)
+2020-09-16 14:41:01.144 febs [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9527"]
+2020-09-16 14:41:01.156 febs [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-09-16 14:41:01.156 febs [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2020-09-16 14:41:01.400 febs [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-09-16 14:41:01.400 febs [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 10873 ms
+2020-09-16 14:41:02.836 febs [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2020-09-16 14:41:02.852 febs [main] INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-09-16 14:41:02.853 febs [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.1 created.
+2020-09-16 14:41:02.928 febs [main] INFO  o.s.s.quartz.LocalDataSourceJobStore - Using db table-based data access locking (synchronization).
+2020-09-16 14:41:02.930 febs [main] INFO  o.s.s.quartz.LocalDataSourceJobStore - JobStoreCMT initialized.
+2020-09-16 14:41:02.931 febs [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'MyScheduler' with instanceId 'MacBook-Pro.local1600238462838'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2020-09-16 14:41:02.932 febs [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'MyScheduler' initialized from an externally provided properties instance.
+2020-09-16 14:41:02.932 febs [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.1
+2020-09-16 14:41:02.934 febs [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@78eafad
+2020-09-16 14:41:03.023 febs [main] INFO  p6spy - 2020-09-16 14:41:03 | 耗时 3 ms | SQL 语句：
+select job_id jobId, bean_name beanName, method_name methodName, params, cron_expression cronExpression, status, remark, create_time createTime from t_job order by job_id;
+2020-09-16 14:41:04.795 febs [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-09-16 14:41:04.992 febs [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'taskExecutor'
+2020-09-16 14:41:05.036 febs [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-09-16 14:41:06.732 febs [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2020-09-16 14:41:06.844 febs [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-09-16 14:41:06.896 febs [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-09-16 14:41:06.977 febs [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-09-16 14:41:07.248 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: exportUsingPOST_1
+2020-09-16 14:41:07.274 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: exportUsingPOST_2
+2020-09-16 14:41:07.276 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateDictUsingPUT_1
+2020-09-16 14:41:07.294 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: exportUsingPOST_3
+2020-09-16 14:41:07.311 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: exportUsingPOST_4
+2020-09-16 14:41:07.321 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: exportUsingPOST_5
+2020-09-16 14:41:07.341 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: exportUsingPOST_6
+2020-09-16 14:41:07.382 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: exportUsingPOST_7
+2020-09-16 14:41:07.391 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: exportUsingPOST_8
+2020-09-16 14:41:07.393 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: generateImportTemplateUsingPOST_1
+2020-09-16 14:41:07.397 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: importExcelsUsingPOST_1
+2020-09-16 14:41:07.420 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: exportUsingPOST_9
+2020-09-16 14:41:07.465 febs [main] INFO  o.s.s.quartz.SchedulerFactoryBean - Will start Quartz Scheduler [MyScheduler] in 1 seconds
+2020-09-16 14:41:07.553 febs [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9527"]
+2020-09-16 14:41:07.590 febs [scheduling-1] INFO  cc.mrbird.febs.common.task.CacheTask - delete expired user
+2020-09-16 14:41:07.626 febs [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9527 (http) with context path ''
+2020-09-16 14:41:07.631 febs [main] INFO  cc.mrbird.febs.FebsApplication - Started FebsApplication in 19.715 seconds (JVM running for 21.615)
+2020-09-16 14:41:07.647 febs [main] INFO  c.m.f.common.runner.CacheInitRunner - Redis连接中 ······
+2020-09-16 14:41:07.648 febs [main] INFO  c.m.f.common.runner.CacheInitRunner - 缓存初始化 ······
+2020-09-16 14:41:07.649 febs [main] INFO  c.m.f.common.runner.CacheInitRunner - 缓存用户数据 ······
+2020-09-16 14:41:07.736 febs [main] INFO  p6spy - 2020-09-16 14:41:07 | 耗时 3 ms | SQL 语句：
+SELECT USER_ID,description,password,modify_time,email,ssex,mobile,dept_id,avatar,last_login_time,create_time,status,username FROM t_user;
+2020-09-16 14:41:07.782 febs [main] INFO  p6spy - 2020-09-16 14:41:07 | 耗时 5 ms | SQL 语句：
+SELECT d.dept_id deptId, GROUP_CONCAT(u.user_id) userIds FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id or u.dept_id = d.parent_id ) where u.dept_id != '' GROUP BY deptId;
+2020-09-16 14:41:07.852 febs [main] INFO  p6spy - 2020-09-16 14:41:07 | 耗时 2 ms | SQL 语句：
+select r.* from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) where u.username = 'mrbird';
+2020-09-16 14:41:07.869 febs [main] INFO  p6spy - 2020-09-16 14:41:07 | 耗时 1 ms | SQL 语句：
+select distinct m.perms from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) left join t_role_menu rm on (rm.role_id = r.role_id) left join t_menu m on (m.menu_id = rm.menu_id) where u.username = 'mrbird' and m.perms is not null and m.perms <> '';
+2020-09-16 14:41:07.881 febs [main] INFO  p6spy - 2020-09-16 14:41:07 | 耗时 0 ms | SQL 语句：
+SELECT USER_ID,layout,color,multi_page,fix_siderbar,fix_header,theme FROM t_user_config WHERE USER_ID='1' ;
+2020-09-16 14:41:07.886 febs [main] INFO  p6spy - 2020-09-16 14:41:07 | 耗时 0 ms | SQL 语句：
+select r.* from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) where u.username = 'scott';
+2020-09-16 14:41:07.889 febs [main] INFO  p6spy - 2020-09-16 14:41:07 | 耗时 0 ms | SQL 语句：
+select distinct m.perms from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) left join t_role_menu rm on (rm.role_id = r.role_id) left join t_menu m on (m.menu_id = rm.menu_id) where u.username = 'scott' and m.perms is not null and m.perms <> '';
+2020-09-16 14:41:07.892 febs [main] INFO  p6spy - 2020-09-16 14:41:07 | 耗时 0 ms | SQL 语句：
+SELECT USER_ID,layout,color,multi_page,fix_siderbar,fix_header,theme FROM t_user_config WHERE USER_ID='2' ;
+2020-09-16 14:41:07.897 febs [main] INFO  p6spy - 2020-09-16 14:41:07 | 耗时 0 ms | SQL 语句：
+select r.* from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) where u.username = 'jack';
+2020-09-16 14:41:07.900 febs [main] INFO  p6spy - 2020-09-16 14:41:07 | 耗时 0 ms | SQL 语句：
+select distinct m.perms from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) left join t_role_menu rm on (rm.role_id = r.role_id) left join t_menu m on (m.menu_id = rm.menu_id) where u.username = 'jack' and m.perms is not null and m.perms <> '';
+2020-09-16 14:41:07.902 febs [main] INFO  p6spy - 2020-09-16 14:41:07 | 耗时 0 ms | SQL 语句：
+SELECT USER_ID,layout,color,multi_page,fix_siderbar,fix_header,theme FROM t_user_config WHERE USER_ID='12' ;
+2020-09-16 14:41:07.905 febs [main] INFO  p6spy - 2020-09-16 14:41:07 | 耗时 0 ms | SQL 语句：
+select r.* from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) where u.username = 'xiaoduan';
+2020-09-16 14:41:07.908 febs [main] INFO  p6spy - 2020-09-16 14:41:07 | 耗时 0 ms | SQL 语句：
+select distinct m.perms from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) left join t_role_menu rm on (rm.role_id = r.role_id) left join t_menu m on (m.menu_id = rm.menu_id) where u.username = 'xiaoduan' and m.perms is not null and m.perms <> '';
+2020-09-16 14:41:07.910 febs [main] INFO  p6spy - 2020-09-16 14:41:07 | 耗时 0 ms | SQL 语句：
+SELECT USER_ID,layout,color,multi_page,fix_siderbar,fix_header,theme FROM t_user_config WHERE USER_ID='13' ;
+2020-09-16 14:41:07.915 febs [main] INFO  p6spy - 2020-09-16 14:41:07 | 耗时 0 ms | SQL 语句：
+select r.* from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) where u.username = 'test';
+2020-09-16 14:41:07.918 febs [main] INFO  p6spy - 2020-09-16 14:41:07 | 耗时 1 ms | SQL 语句：
+select distinct m.perms from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) left join t_role_menu rm on (rm.role_id = r.role_id) left join t_menu m on (m.menu_id = rm.menu_id) where u.username = 'test' and m.perms is not null and m.perms <> '';
+2020-09-16 14:41:07.921 febs [main] INFO  p6spy - 2020-09-16 14:41:07 | 耗时 1 ms | SQL 语句：
+SELECT USER_ID,layout,color,multi_page,fix_siderbar,fix_header,theme FROM t_user_config WHERE USER_ID='16' ;
+2020-09-16 14:41:07.925 febs [main] INFO  p6spy - 2020-09-16 14:41:07 | 耗时 0 ms | SQL 语句：
+select r.* from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) where u.username = 'ddmtest14';
+2020-09-16 14:41:07.927 febs [main] INFO  p6spy - 2020-09-16 14:41:07 | 耗时 0 ms | SQL 语句：
+select distinct m.perms from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) left join t_role_menu rm on (rm.role_id = r.role_id) left join t_menu m on (m.menu_id = rm.menu_id) where u.username = 'ddmtest14' and m.perms is not null and m.perms <> '';
+2020-09-16 14:41:07.929 febs [main] INFO  p6spy - 2020-09-16 14:41:07 | 耗时 0 ms | SQL 语句：
+SELECT USER_ID,layout,color,multi_page,fix_siderbar,fix_header,theme FROM t_user_config WHERE USER_ID='33' ;
+2020-09-16 14:41:07.933 febs [main] INFO  p6spy - 2020-09-16 14:41:07 | 耗时 0 ms | SQL 语句：
+select r.* from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) where u.username = 'test1';
+2020-09-16 14:41:07.936 febs [main] INFO  p6spy - 2020-09-16 14:41:07 | 耗时 1 ms | SQL 语句：
+select distinct m.perms from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) left join t_role_menu rm on (rm.role_id = r.role_id) left join t_menu m on (m.menu_id = rm.menu_id) where u.username = 'test1' and m.perms is not null and m.perms <> '';
+2020-09-16 14:41:07.940 febs [main] INFO  p6spy - 2020-09-16 14:41:07 | 耗时 0 ms | SQL 语句：
+SELECT USER_ID,layout,color,multi_page,fix_siderbar,fix_header,theme FROM t_user_config WHERE USER_ID='34' ;
+2020-09-16 14:41:07.948 febs [main] INFO  p6spy - 2020-09-16 14:41:07 | 耗时 1 ms | SQL 语句：
+select r.* from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) where u.username = 'admin';
+2020-09-16 14:41:07.957 febs [main] INFO  p6spy - 2020-09-16 14:41:07 | 耗时 3 ms | SQL 语句：
+select distinct m.perms from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) left join t_role_menu rm on (rm.role_id = r.role_id) left join t_menu m on (m.menu_id = rm.menu_id) where u.username = 'admin' and m.perms is not null and m.perms <> '';
+2020-09-16 14:41:07.989 febs [main] INFO  p6spy - 2020-09-16 14:41:07 | 耗时 2 ms | SQL 语句：
+SELECT USER_ID,layout,color,multi_page,fix_siderbar,fix_header,theme FROM t_user_config WHERE USER_ID='35' ;
+2020-09-16 14:41:08.003 febs [main] INFO  p6spy - 2020-09-16 14:41:08 | 耗时 8 ms | SQL 语句：
+select r.* from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) where u.username = 'test33333';
+2020-09-16 14:41:08.010 febs [main] INFO  p6spy - 2020-09-16 14:41:08 | 耗时 3 ms | SQL 语句：
+select distinct m.perms from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) left join t_role_menu rm on (rm.role_id = r.role_id) left join t_menu m on (m.menu_id = rm.menu_id) where u.username = 'test33333' and m.perms is not null and m.perms <> '';
+2020-09-16 14:41:08.017 febs [main] INFO  p6spy - 2020-09-16 14:41:08 | 耗时 1 ms | SQL 语句：
+SELECT USER_ID,layout,color,multi_page,fix_siderbar,fix_header,theme FROM t_user_config WHERE USER_ID='36' ;
+2020-09-16 14:41:08.019 febs [main] INFO  c.m.f.common.runner.StartedUpRunner -  __    ___   _      ___   _     ____ _____  ____ 
+2020-09-16 14:41:08.019 febs [main] INFO  c.m.f.common.runner.StartedUpRunner - / /`  / / \ | |\/| | |_) | |   | |_   | |  | |_  
+2020-09-16 14:41:08.019 febs [main] INFO  c.m.f.common.runner.StartedUpRunner - \_\_, \_\_/ |_|  | |_|   |_|__ |_|__  |_|  |_|__ 
+2020-09-16 14:41:08.019 febs [main] INFO  c.m.f.common.runner.StartedUpRunner -                                                       
+2020-09-16 14:41:08.019 febs [main] INFO  c.m.f.common.runner.StartedUpRunner - FEBS 启动完毕，时间：2020-09-16T14:41:08.019
+2020-09-16 14:41:08.130 febs [RMI TCP Connection(1)-127.0.0.1] INFO  p6spy - 2020-09-16 14:41:08 | 耗时 1 ms | SQL 语句：
+select 1;
+2020-09-16 14:41:08.130 febs [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-16 14:41:08.131 febs [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-09-16 14:41:08.184 febs [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 53 ms
+2020-09-16 14:41:08.475 febs [Quartz Scheduler [MyScheduler]] INFO  o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now, after delay of 1 seconds
+2020-09-16 14:41:08.484 febs [Quartz Scheduler [MyScheduler]] INFO  o.s.s.quartz.LocalDataSourceJobStore - ClusterManager: detected 1 failed or restarted instances.
+2020-09-16 14:41:08.484 febs [Quartz Scheduler [MyScheduler]] INFO  o.s.s.quartz.LocalDataSourceJobStore - ClusterManager: Scanning for instance "MacBook-Pro.local1600237898269"'s failed in-progress jobs.
+2020-09-16 14:41:08.489 febs [Quartz Scheduler [MyScheduler]] INFO  p6spy - 
+2020-09-16 14:41:08.490 febs [Quartz Scheduler [MyScheduler]] INFO  org.quartz.core.QuartzScheduler - Scheduler MyScheduler_$_MacBook-Pro.local1600238462838 started.
+2020-09-16 14:41:08.495 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:41:08.498 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 14:41:20.496 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:41:23.490 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:41:23.491 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:41:31.959 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 14:41:32.501 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:41:38.498 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:41:38.498 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:41:44.504 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:41:53.504 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:41:53.506 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:41:56.510 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:41:59.933 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 14:42:08.511 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:42:08.513 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:42:08.514 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:42:20.519 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:42:23.519 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:42:23.525 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:42:25.580 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 14:42:32.524 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:42:38.525 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:42:38.525 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:42:44.529 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:42:51.202 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 14:42:53.531 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:42:53.532 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:42:56.535 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:43:08.538 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:43:08.540 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:43:08.541 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:43:20.370 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 14:43:20.544 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:43:23.546 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:43:23.546 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:43:32.549 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:43:38.551 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:43:38.551 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:43:44.347 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 14:43:44.553 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:43:53.554 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:43:53.554 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:43:56.554 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:44:08.559 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:44:08.560 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:44:08.561 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:44:11.451 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 14:44:20.566 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:44:23.567 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:44:23.567 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:44:32.569 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:44:35.750 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 14:44:38.573 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:44:38.573 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:44:44.572 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:44:53.578 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:44:53.581 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:44:56.577 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:44:59.668 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 14:45:08.584 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:45:08.586 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:45:08.587 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:45:20.595 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:45:22.806 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 14:45:23.596 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:45:23.597 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:45:32.588 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:45:38.600 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:45:38.602 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:45:44.593 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:45:51.080 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 14:45:53.605 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:45:53.606 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:45:56.599 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:46:08.603 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:46:08.609 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:46:08.609 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:46:16.135 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 14:46:20.611 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:46:23.612 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:46:23.612 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:46:32.611 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:46:38.617 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:46:38.618 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:46:41.756 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 14:46:44.616 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:46:53.624 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:46:53.624 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:46:56.620 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:47:08.625 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:47:08.630 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:47:08.630 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:47:11.078 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 14:47:20.628 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:47:23.636 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:47:23.637 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:47:32.628 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:47:38.639 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:47:38.639 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:47:40.232 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 14:47:44.633 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:47:53.647 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:47:53.649 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:47:56.639 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:48:07.115 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 14:48:08.644 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:48:08.652 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:48:08.653 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:48:20.649 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:48:23.668 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:48:23.670 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:48:32.663 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:48:36.793 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 14:48:38.682 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:48:38.682 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:48:44.671 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:48:53.730 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:48:53.740 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:48:56.687 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:49:00.979 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 14:49:08.688 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:49:08.725 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:49:08.726 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:49:20.687 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:49:23.734 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:49:23.738 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:49:29.711 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 14:49:32.694 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:49:38.746 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:49:38.747 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:49:44.698 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:49:53.751 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:49:53.752 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:49:54.107 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 14:49:56.700 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:50:08.705 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:50:08.757 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:50:08.757 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:50:19.183 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 14:50:20.710 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:50:23.764 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:50:23.764 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:50:32.713 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:50:38.770 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:50:38.771 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:50:44.720 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:50:48.126 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 14:50:53.781 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:50:53.786 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:50:56.723 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:51:08.727 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:51:08.795 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:51:08.801 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:51:17.241 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 14:51:20.732 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:51:23.794 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:51:23.794 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:51:32.735 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:51:38.801 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:51:38.801 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:51:41.205 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 14:51:44.740 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:51:53.809 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:51:53.811 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:51:56.742 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:52:08.746 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:52:08.820 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:52:08.820 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:52:09.627 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 14:52:20.751 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:52:23.904 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:52:23.959 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:52:32.755 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:52:32.880 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 14:52:38.873 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:52:38.875 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:52:44.823 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:52:53.895 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:52:53.898 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:52:56.777 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:52:57.420 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 14:53:08.778 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:53:08.897 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:53:08.898 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:53:20.785 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:53:23.904 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:53:23.905 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:53:26.855 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 14:53:32.788 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:53:38.908 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:53:38.910 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:53:44.793 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:53:52.058 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 14:53:53.913 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:53:53.913 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:53:56.799 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:54:08.806 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:54:08.924 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:54:08.926 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:54:18.576 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 14:54:20.805 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:54:23.928 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:54:23.929 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:54:32.810 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:54:38.935 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:54:38.935 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:54:43.393 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 14:54:44.814 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:54:53.939 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:54:53.939 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:54:56.820 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:55:08.030 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 14:55:08.821 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:55:08.945 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:55:08.946 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:55:20.824 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:55:23.952 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:55:23.953 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:55:31.197 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 14:55:32.829 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:55:38.960 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:55:38.961 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:55:44.832 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:55:53.975 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:55:53.977 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:55:56.837 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:56:00.823 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 14:56:08.838 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:56:08.978 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:56:08.979 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:56:20.842 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:56:23.984 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:56:23.984 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:56:27.402 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 14:56:32.846 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:56:38.990 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:56:38.990 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:56:44.848 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:56:53.997 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:56:53.999 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:56:56.567 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 14:56:56.853 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:57:08.856 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:57:09.003 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:57:09.003 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:57:20.423 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 14:57:20.858 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:57:24.010 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:57:24.010 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:57:32.862 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:57:39.016 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:57:39.017 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:57:44.834 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 14:57:44.866 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:57:54.023 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:57:54.023 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:57:56.872 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:58:08.875 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:58:09.029 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:58:09.029 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:58:13.311 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 14:58:20.880 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:58:24.036 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:58:24.036 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:58:32.882 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:58:39.043 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:58:39.044 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:58:42.437 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 14:58:44.888 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:58:54.049 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:58:54.051 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:58:56.891 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:59:08.896 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:59:09.053 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:59:09.054 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:59:09.366 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 14:59:20.902 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:59:24.060 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:59:24.061 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:59:32.906 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:59:38.130 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 14:59:39.067 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:59:39.067 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:59:44.909 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 14:59:54.073 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:59:54.073 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 14:59:56.913 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 15:00:04.463 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 15:00:08.918 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 15:00:09.079 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:00:09.080 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:00:20.924 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 15:00:24.085 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:00:24.086 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:00:32.928 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 15:00:33.489 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 15:00:39.093 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:00:39.093 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:00:44.933 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 15:00:54.099 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:00:54.100 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:00:56.934 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 15:01:00.796 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 15:01:08.936 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 15:01:09.105 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:01:09.105 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:01:20.940 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 15:01:24.112 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:01:24.113 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:01:24.442 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 15:01:32.941 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 15:01:39.118 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:01:39.118 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:01:44.946 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 15:01:50.099 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 15:01:54.125 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:01:54.126 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:01:56.950 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 15:02:08.955 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 15:02:09.131 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:02:09.132 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:02:14.358 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 15:02:20.960 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 15:02:24.137 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:02:24.137 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:02:32.964 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 15:02:38.094 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 15:02:39.144 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:02:39.144 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:02:44.970 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 15:02:54.150 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:02:54.150 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:02:56.974 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 15:03:07.070 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 15:03:08.977 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 15:03:09.155 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:03:09.156 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:03:20.985 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 15:03:24.169 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:03:24.169 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:03:32.994 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 15:03:36.626 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 15:03:39.181 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:03:39.183 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:03:45.002 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 15:03:54.189 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:03:54.189 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:03:57.008 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 15:04:00.626 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 15:04:09.012 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 15:04:09.200 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:04:09.201 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:04:21.017 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 15:04:24.208 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:04:24.208 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:04:24.269 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 15:04:33.018 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 15:04:39.214 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:04:39.214 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:04:45.022 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 15:04:50.991 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 15:04:54.222 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:04:54.223 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:04:57.026 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 15:05:09.030 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 15:05:09.225 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:05:09.225 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:05:16.748 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 15:05:21.033 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 15:05:24.232 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:05:24.232 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:05:33.038 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 15:05:39.239 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:05:39.240 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:05:41.317 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 15:05:45.041 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 15:05:54.246 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:05:54.246 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:05:57.046 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 15:06:09.052 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 15:06:09.253 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:06:09.253 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:06:09.352 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 15:06:21.056 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 15:06:24.260 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:06:24.261 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:06:33.059 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 15:06:37.899 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 15:06:39.267 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:06:39.267 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:06:45.065 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 15:06:54.274 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:06:54.274 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:06:57.068 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 15:07:05.701 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 15:07:09.073 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 15:07:09.362 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:07:09.366 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:07:21.079 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 15:07:24.342 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:07:24.342 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:07:33.082 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 15:07:35.077 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 15:07:39.348 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:07:39.351 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:07:45.086 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 15:07:54.355 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:07:54.355 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:07:57.087 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 15:08:03.020 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 15:08:09.092 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 15:08:09.361 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:08:09.361 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:08:21.098 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 15:08:24.367 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:08:24.367 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:08:30.828 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 15:08:33.103 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 15:08:39.372 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:08:39.372 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:08:45.103 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 15:08:54.380 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:08:54.381 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:08:57.106 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 15:08:59.556 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 15:09:09.110 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 15:09:09.384 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:09:09.384 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:09:21.117 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 15:09:24.391 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:09:24.391 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:09:27.417 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2020-09-16 15:09:33.114 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_MisfireHandler] INFO  p6spy - 
+2020-09-16 15:09:39.399 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:09:39.401 febs [QuartzScheduler_MyScheduler-MacBook-Pro.local1600238462838_ClusterManager] INFO  p6spy - 
+2020-09-16 15:09:41.818 febs [Thread-43] INFO  org.quartz.core.QuartzScheduler - Scheduler MyScheduler_$_MacBook-Pro.local1600238462838 paused.
+2020-09-16 15:09:41.831 febs [Thread-43] INFO  o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2020-09-16 15:09:41.911 febs [Thread-43] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'taskExecutor'
+2020-09-16 15:09:41.923 febs [Thread-43] INFO  o.s.s.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2020-09-16 15:09:41.925 febs [Thread-43] INFO  org.quartz.core.QuartzScheduler - Scheduler MyScheduler_$_MacBook-Pro.local1600238462838 shutting down.
+2020-09-16 15:09:41.925 febs [Thread-43] INFO  org.quartz.core.QuartzScheduler - Scheduler MyScheduler_$_MacBook-Pro.local1600238462838 paused.
+2020-09-16 15:09:41.933 febs [Thread-43] INFO  org.quartz.core.QuartzScheduler - Scheduler MyScheduler_$_MacBook-Pro.local1600238462838 shutdown complete.
+2020-09-16 15:09:41.952 febs [Thread-43] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2020-09-16 15:09:41.955 febs [Thread-43] INFO  com.zaxxer.hikari.HikariDataSource - primary - Shutdown initiated...
+2020-09-16 15:09:41.997 febs [Thread-43] INFO  com.zaxxer.hikari.HikariDataSource - primary - Shutdown completed.
+2020-09-16 15:09:41.997 febs [Thread-43] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource all closed success,bye

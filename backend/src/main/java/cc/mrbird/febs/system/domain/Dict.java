@@ -1,6 +1,7 @@
 package cc.mrbird.febs.system.domain;
 
 import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.wuwenze.poi.annotation.Excel;
@@ -35,6 +36,7 @@ public class Dict implements Serializable {
     @NotBlank(message = "{required}")
     @Size(max = 20, message = "{noMoreThan}")
     @ExcelField(value = "表名")
+    @TableField(value = "\"TABLE_NAME\"")
     private String tableName;
 
     @NotBlank(message = "{required}")

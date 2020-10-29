@@ -16,12 +16,17 @@ spring:
       # 配置默认数据源
       primary: primary
       datasource:
-        # 数据源-1，名称为 primary
         primary:
-          username: root
-          password: febs_shiro_jwt
-          driver-class-name: com.mysql.cj.jdbc.Driver
-          url: jdbc:mysql://127.0.0.1:3306/febs_shiro_jwt?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai
+          username: yaco
+          password: yaco
+          driver-class-name: org.postgresql.Driver
+          url: jdbc:postgresql://localhost:5432/test
+        # 数据源-1，名称为 primary
+#        primary:
+#          username: febs
+#          password: febs_pwd
+#          driver-class-name: com.mysql.cj.jdbc.Driver
+#          url: jdbc:mysql://127.0.0.1:3306/febs?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai
         # 数据源-2，名称为 test
 #        test:
 #          username: root
@@ -41,9 +46,12 @@ spring:
       WRITE_DATES_AS_TIMESTAMPS: false
 
   redis:
+#    host: 192.168.6.22
+#    password: FuMchntTest2018
+#    port: 33333
     host: 127.0.0.1
-    port: 6379
     password:
+    port: 6379
     jedis:
       pool:
         min-idle: 8
@@ -51,6 +59,13 @@ spring:
         max-active: 2000
         max-wait: 10000
     timeout: 0
+    database: 3
+
+   # quartz自动生成表结构
+#  quartz:
+#    jdbc:
+#      initialize-schema: always
+#    job-store-type: jdbc
 
 
 #mybatis plus 设置
@@ -90,11 +105,11 @@ febs:
     description: FEBS VUE API Document.
     version: 2.0
     author: MrBird
-    url: https://mrbird.cc
-    email: 852252810@qq.com
+    url: http://www.shuizd.com
+    email: luyou0401@163.com
     license: Apache 2.0
     licenseUrl: https://www.apache.org/licenses/LICENSE-2.0.html
 
 # 最大导出数量
 export:
-  maxCount: 10000
+  maxCount: 50000

@@ -1,5 +1,6 @@
 package cc.mrbird.febs.system.domain;
 
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 import lombok.ToString;
@@ -22,6 +23,7 @@ public class LoginLog {
     /**
      * 登录地点
      */
+    @TableField(value = "\"LOCATION\"")
     private String location;
 
     private String ip;

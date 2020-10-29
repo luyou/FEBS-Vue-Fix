@@ -51,6 +51,7 @@ public class User implements Serializable {
     @ExcelField(value = "用户名")
     private String username;
 
+    @TableField(value = "\"PASSWORD\"")
     private String password;
 
     private Long deptId;
